@@ -312,6 +312,43 @@ header.scrolled .navbar {
 }
 
 
+// Electronics Coming Soon
+.electronics-coming-soon {
+  background: #fff;
+}
+
+.electronics-coming-soon__card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 28px 20px;
+  border-radius: 16px;
+  border: 1px solid #dbe4f0;
+  background: linear-gradient(135deg, #f8fbff 0%, #eef4ff 100%);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.electronics-coming-soon__badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #f97316;
+}
+
+.electronics-coming-soon__card h3 {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.electronics-coming-soon__card p {
+  color: #475569;
+}
+
+
 // How It Works Section
 .how-it-works {
   background: linear-gradient(180deg, #fff 0%, #f8f8f8 100%);

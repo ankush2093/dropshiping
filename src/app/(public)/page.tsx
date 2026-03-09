@@ -278,6 +278,16 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <section className="section-padding electronics-coming-soon">
+        <div className="container">
+          <div className="electronics-coming-soon__card text-center">
+            <p className="electronics-coming-soon__badge mb-2">Coming Soon</p>
+            <h3 className="mb-2">Electronics</h3>
+            <p className="mb-0">New electronics category is launching shortly.</p>
+          </div>
+        </div>
+      </section>
       
       <section id="how-itworks" className="section-padding how-it-works">
         <div className="container">
@@ -363,15 +373,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="why-choose-us" className="section-padding">
-        <div className="container">
-          <h3 className="text-center mb-4">Why Choose Us</h3>
-          <p className="text-center text-muted mb-0">
-            Competitive pricing, reliable delivery, and strong product variety
-            for drop shipping growth.
-          </p>
-        </div>
-      </section>
 
       <section id="contact-us" className="section-padding contact-us">
         <div className="container">
