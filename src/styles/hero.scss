@@ -1,0 +1,162 @@
+@import './variables.scss';
+
+.hero-hm__section {
+    padding: 20px 0;
+    background: #f8f9fa;
+}
+
+.hero-hm__container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.hero-hm__swiper {
+    border-radius: 12px;
+    overflow: hidden;
+
+    .swiper-slide {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border-radius: 12px;
+    }
+
+    .swiper-pagination-bullet {
+        background: var(--color-white);
+        opacity: 0.5;
+
+        &-active {
+            opacity: 1;
+            background: var(--color-white);
+        }
+    }
+
+    .hero-hm__nav-btn {
+        width: 45px;
+        height: 45px;
+        background: var(--color-white);
+        border-radius: 50%;
+        color: var(--color-primary);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &:hover {
+            background: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        &--prev {
+            left: 20px;
+        }
+
+        &--next {
+            right: 20px;
+        }
+    }
+}
+
+.hero-hm__content {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    max-width: 400px;
+
+    &--center {
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        top: 20%;
+    }
+
+    &--right {
+        left: auto;
+        right: 15%;
+        top: 20%;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        color: #1a1a1a;
+        line-height: 1.1;
+        margin-bottom: 5px;
+    }
+
+    .hero-hm__badge {
+        display: inline-block;
+        background: #000;
+        color: #fff;
+        padding: 8px 20px;
+        border-radius: 999px;
+        font-family: 'Outfit', sans-serif;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 130px;
+
+        span {
+            color: #ffd700; // Gold/Yellow
+        }
+    }
+
+    &--womens {
+        h2 {
+            color: #fff;
+
+            span {
+                display: block;
+                font-family: serif;
+                font-style: italic;
+                color: #fffac1;
+                font-size: 2.2rem;
+            }
+        }
+
+        .hero-hm__badge {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            margin-top: 150px;
+        }
+    }
+
+    &--shipping {
+        h2 {
+            color: var(--color-primary);
+            font-size: 1.8rem;
+
+            span {
+                color: var(--color-secondary);
+            }
+        }
+
+        .hero-hm__fees {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-secondary);
+            margin-top: 20px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-hm__swiper .swiper-slide {
+        height: 250px;
+    }
+
+    .hero-hm__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-hm__content {
+        left: 10%;
+    }
+}
