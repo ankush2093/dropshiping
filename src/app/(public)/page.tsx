@@ -262,6 +262,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      
       <section id="how-itworks" className="section-padding how-it-works">
         <div className="container">
           <h3 className="text-center mb-2">How It Works</h3>

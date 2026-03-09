@@ -14,13 +14,13 @@ export * from './auth';
 
 
 // Slots API
-export * from './slots';
+// export * from './slots';
 
-// Book Store API
-export * from './book-store';
+// // Book Store API
+// export * from './book-store';
 
-// Get Appoinemnt
-export * from './appointments';
+// // Get Appoinemnt
+// export * from './appointments';
 
 // Re-export base API if needed
 export { baseApi } from './baseApi';
