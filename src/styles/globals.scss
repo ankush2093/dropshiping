@@ -404,3 +404,296 @@ header.scrolled .navbar {
     font-size: 14px;
   }
 }
+
+
+// Business Analysis Section
+.business-analysis {
+  background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
+}
+
+.business-analysis__heading h3 {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.business-analysis__metrics {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.business-analysis__metric-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 12px;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 140px;
+}
+
+.business-analysis__metric-index {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  background: #0f172a;
+}
+
+.business-analysis__metric-card p {
+  margin: 0;
+  color: #1e293b;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.business-analysis__metric-value {
+  margin-top: auto;
+  color: #f97316;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.business-analysis__profit-builder {
+  background: #fff;
+  border: 1px solid #dbe4f0;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 10px 22px rgba(15, 23, 42, 0.08);
+}
+
+.business-analysis__profit-builder h4 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.business-analysis__flow {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.business-analysis__flow-item {
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.business-analysis__flow-item span {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.business-analysis__flow-item i {
+  color: #64748b;
+}
+
+.business-analysis__flow-item--highlight {
+  background: #fff7ed;
+  border-color: #fed7aa;
+}
+
+.business-analysis__flow-item--highlight span,
+.business-analysis__flow-item--highlight i {
+  color: #c2410c;
+  font-weight: 600;
+}
+
+.business-analysis__result {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px dashed #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.business-analysis__result p {
+  color: #0f172a;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.business-analysis__order-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 22px;
+  background: var(--color-primary);
+  color: #fff;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.business-analysis__order-btn:hover {
+  background: #12284d;
+}
+
+@media (max-width: 991px) {
+  .business-analysis__metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .business-analysis__metric-card {
+    min-height: 128px;
+  }
+
+  .business-analysis__profit-builder {
+    padding: 16px 14px;
+  }
+
+  .business-analysis__profit-builder h4 {
+    font-size: 20px;
+  }
+
+  .business-analysis__flow {
+    grid-template-columns: 1fr;
+  }
+
+  .business-analysis__result {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+// Contact Us Section
+.contact-us {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef4ff 100%);
+}
+
+.contact-us__wrap {
+  max-width: 860px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.contact-us__head h3 {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.contact-us__head p {
+  color: #475569;
+}
+
+.contact-us__card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  transition: 0.25s ease;
+}
+
+.contact-us__card:hover {
+  border-color: #bfd5ff;
+  background: #f1f6ff;
+  transform: translateY(-2px);
+}
+
+.contact-us__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.contact-us__card small {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.contact-us__card p {
+  margin: 2px 0 0;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.contact-us__actions {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.contact-us__btn {
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.25s ease;
+}
+
+.contact-us__btn--whatsapp {
+  background: #22c55e;
+  color: #fff;
+}
+
+.contact-us__btn--whatsapp:hover {
+  background: #16a34a;
+  color: #fff;
+}
+
+.contact-us__btn--mail {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.contact-us__btn--mail:hover {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+@media (max-width: 991px) {
+  .contact-us__wrap {
+    padding: 18px 14px;
+  }
+
+  .contact-us__actions {
+    justify-content: stretch;
+  }
+
+  .contact-us__btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

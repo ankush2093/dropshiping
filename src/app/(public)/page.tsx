@@ -7,6 +7,14 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 
 export default function HomePage() {
+  const analysisMetrics = [
+    "Vendor Availability on Amazon",
+    "Vendor Availability on Flipkart",
+    "Average Sale / Month",
+    "Competition Score",
+    "Demand Score",
+  ];
+
   const problems = [
     "High MOQ from China suppliers",
     "Unpredictable landed cost & duties",
@@ -22,6 +30,14 @@ export default function HomePage() {
     "Pre-import QC: Quality check before dispatch",
     "Ready-to-sell goods: Barcode, size tag, packaging, private label",
     "Faster access to trends: Get edge with trending items",
+  ];
+
+  const profitInputs = [
+    "Average Price from China / pc",
+    "Discount for bigger quantity",
+    "Freight Cost / Landed / GST / Duties",
+    "Packaging Cost",
+    "Private Label",
   ];
 
   return (
@@ -301,6 +317,52 @@ export default function HomePage() {
         </div>
       </section>
 
+      <section id="business-analysis" className="section-padding business-analysis">
+        <div className="container">
+          <div className="business-analysis__heading">
+            <h3 className="text-center mb-2">Business Analysis</h3>
+            <p className="text-center text-muted mb-4">
+              Powerful feature set to quickly evaluate product potential and profit.
+            </p>
+          </div>
+
+          <div className="business-analysis__metrics">
+            {analysisMetrics.map((item, index) => (
+              <div className="business-analysis__metric-card" key={item}>
+                <span className="business-analysis__metric-index">{index + 1}</span>
+                <p>{item}</p>
+                <span className="business-analysis__metric-value">#</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="business-analysis__profit-builder">
+            <h4>Profit Graph / Builder</h4>
+            <div className="business-analysis__flow">
+              {profitInputs.map((item) => (
+                <div className="business-analysis__flow-item" key={item}>
+                  <span>{item}</span>
+                  <i className="fas fa-arrow-right"></i>
+                </div>
+              ))}
+              <div className="business-analysis__flow-item business-analysis__flow-item--highlight">
+                <span>Current Selling Price in Indian Market</span>
+                <i className="fas fa-arrow-right"></i>
+              </div>
+            </div>
+
+            <div className="business-analysis__result">
+              <p className="mb-0">
+                Profit Margin <strong>→ %</strong>
+              </p>
+              <button type="button" className="business-analysis__order-btn">
+                Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="why-choose-us" className="section-padding">
         <div className="container">
           <h3 className="text-center mb-4">Why Choose Us</h3>
@@ -311,11 +373,50 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="contact-us" className="section-padding bg-light">
-        <div className="container text-center">
-          <h3 className="mb-3">Contact Us</h3>
-          <p className="mb-1">Email: care@deodap.com</p>
-          <p className="mb-0">Phone: +91 9638666607</p>
+      <section id="contact-us" className="section-padding contact-us">
+        <div className="container">
+          <div className="contact-us__wrap">
+            <div className="contact-us__head text-center">
+              <h3 className="mb-2">Contact Us</h3>
+              <p className="mb-0">
+                Need help with product sourcing or business setup? Our team is ready to support you.
+              </p>
+            </div>
+
+            <div className="row g-3 mt-1">
+              <div className="col-md-6">
+                <a className="contact-us__card" href="mailto:care@deodap.com">
+                  <span className="contact-us__icon">
+                    <i className="fas fa-envelope"></i>
+                  </span>
+                  <div>
+                    <small>Email Us</small>
+                    <p>care@deodap.com</p>
+                  </div>
+                </a>
+              </div>
+              <div className="col-md-6">
+                <a className="contact-us__card" href="tel:+919638666607">
+                  <span className="contact-us__icon">
+                    <i className="fas fa-phone-alt"></i>
+                  </span>
+                  <div>
+                    <small>Call Us</small>
+                    <p>+91 9638666607</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div className="contact-us__actions">
+              <a href="https://wa.me/919638666607" target="_blank" rel="noreferrer" className="contact-us__btn contact-us__btn--whatsapp">
+                <i className="fab fa-whatsapp"></i> Chat on WhatsApp
+              </a>
+              <a href="mailto:care@deodap.com" className="contact-us__btn contact-us__btn--mail">
+                <i className="fas fa-paper-plane"></i> Send Email
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </>
