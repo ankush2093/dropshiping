@@ -140,7 +140,7 @@ const Navbar: React.FC = () => {
           </div>
 
           <form className="dd-nav__search">
-            <input type="text" placeholder="Search For Office & S" />
+            <input type="search" placeholder="Search For Products..." />
             <button type="submit">
               <i className="fas fa-search"></i>
             </button>
