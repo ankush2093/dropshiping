@@ -24,7 +24,7 @@ export default function HomePage() {
       title: "Kitchen tools & storage",
       subtitle: "Home utility collection",
       note: "Best sellers picked for daily use",
-      offer: "Extra savings on combo packs and starter kits",
+     
       backgroundImage:
         "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2400&auto=format&fit=crop",
       productImage:
@@ -35,7 +35,6 @@ export default function HomePage() {
       title: "Desk essentials from Rs149",
       subtitle: "Workstation must-haves",
       note: "Fast moving items for resale",
-      offer: "Bulk pricing available for selected office products",
       backgroundImage:
         "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2400&auto=format&fit=crop",
       productImage:
@@ -218,7 +217,6 @@ export default function HomePage() {
                     <h1>{slide.title}</h1>
                     <p className="hero-hm__brand">{slide.subtitle}</p>
                     <div className="hero-hm__note">{slide.note}</div>
-                    {/* <div className="hero-hm__offer">{slide.offer}</div> */}
                   </div>
 
                   <div className="hero-hm__product-wrap">
@@ -486,52 +484,14 @@ export default function HomePage() {
         <div className="container"></div>
       </section>
 
-      {/* <section id="how-itworks" className="section-padding how-it-works">
+      <section id="how-it-works" className="section-padding bg-light">
         <div className="container">
-          <h3 className="text-center mb-2">How It Works</h3>
-          <p className="text-center text-muted mb-4">
-            Left side is the challenge. Right side is our clear solution.
-          </p>
-
-          <div className="row g-3">
-            <div className="col-md-6">
-              <div className="how-it-works__panel how-it-works__panel--problem h-100">
-                <h4>Problems</h4>
-                <ul className="how-it-works__list">
-                  {problems.map((item, index) => (
-                    <li key={item}>
-                      <span>{index + 1}</span>
-                      <p>{item}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="how-it-works__panel how-it-works__panel--solution h-100">
-                <h4>Our Solutions</h4>
-                <ul className="how-it-works__list">
-                  {solutions.map((item, index) => (
-                    <li key={item}>
-                      <span>{index + 1}</span>
-                      <p>{item}</p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-
-      <section id="how-it-works" className="py-5 how-it-works-modern">
-        <div className="container">
-          <div className="text-center mb-5 how-heading-wrap">
+          <div className="text-center mb-5">
             <span className="badge bg-primary-soft text-primary mb-2 px-3 py-2">
               The Better Way
             </span>
             <h2 className="fw-bold">Why Smart Sellers Choose Us</h2>
-            <p className="text-muted mx-auto how-heading-subtitle" style={{ maxWidth: "600px" }}>
+            <p className="text-muted mx-auto" style={{ maxWidth: "600px" }}>
               Traditional importing is broken. We fixed it by removing the
               middleman headaches.
             </p>
@@ -566,9 +526,9 @@ export default function HomePage() {
               <div className="how-card solution-card h-100 shadow-lg">
                 <div className="card-header-custom">
                   <div className="icon-box bg-success-light">
-                    <i className="fa-solid fa-bolt text-success"></i>
+                    <i className="fa-solid fa-circle-check text-success"></i>
                   </div>
-                  <h4>The DeoDap Way</h4>
+                  <h4>The Trade Bridge Way</h4>
                 </div>
                 <ul className="modern-list">
                   {solutions.map((item, index) => (
