@@ -260,7 +260,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="top-treanding" className="section-padding hm_top_treanding_section">
+      <section
+        id="top-treanding"
+        className="section-padding hm_top_treanding_section"
+      >
         <div className="container">
           <h3 className="text-center mb-4">Top Trending</h3>
 
@@ -338,8 +341,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-
 
       <section
         id="top-treanding"
@@ -419,7 +420,7 @@ export default function HomePage() {
         </div>
       </section>
 
-        <section id="top-selling" className="hm_category_section section-padding">
+      <section id="top-selling" className="hm_category_section section-padding">
         <div className="container">
           <h3 className="text-center mb-4">Top Deals</h3>
           <img className="img-fluid mb-4" src="img/offerbanner.png" alt="" />
@@ -427,78 +428,54 @@ export default function HomePage() {
             <div className="col-6 col-6 col-md-2">
               <div className="ctategory_card_hm">
                 <div className="category_img-warpper">
-                  <img
-                    src="img/topselling.jpeg"
-                    alt="ccateimges"
-                  />
-                 
+                  <img src="img/topselling.jpeg" alt="ccateimges" />
                 </div>
-                 <p>Top Selling</p>
+                <p>Top Selling</p>
               </div>
             </div>
 
             <div className="col-6 col-md-2">
               <div className="ctategory_card_hm">
                 <div className="category_img-warpper">
-                  <img
-                    src="img/topselling.jpeg"
-                    alt="ccateimges"
-                  />
-                 
+                  <img src="img/topselling.jpeg" alt="ccateimges" />
                 </div>
-                 <p>Top Selling</p>
+                <p>Top Selling</p>
               </div>
             </div>
 
             <div className="col-6 col-md-2">
               <div className="ctategory_card_hm">
                 <div className="category_img-warpper">
-                  <img
-                    src="img/topselling.jpeg"
-                    alt="ccateimges"
-                  />
-                 
+                  <img src="img/topselling.jpeg" alt="ccateimges" />
                 </div>
-                 <p>Top Selling</p>
+                <p>Top Selling</p>
               </div>
             </div>
 
             <div className="col-6 col-md-2">
               <div className="ctategory_card_hm">
                 <div className="category_img-warpper">
-                  <img
-                    src="img/topselling.jpeg"
-                    alt="ccateimges"
-                  />
-                 
+                  <img src="img/topselling.jpeg" alt="ccateimges" />
                 </div>
-                 <p>Top Selling</p>
+                <p>Top Selling</p>
               </div>
             </div>
 
             <div className="col-6 col-md-2">
               <div className="ctategory_card_hm">
                 <div className="category_img-warpper">
-                  <img
-                    src="img/topselling.jpeg"
-                    alt="ccateimges"
-                  />
-                 
+                  <img src="img/topselling.jpeg" alt="ccateimges" />
                 </div>
-                 <p>Top Selling</p>
+                <p>Top Selling</p>
               </div>
             </div>
 
             <div className="col-6 col-md-2">
               <div className="ctategory_card_hm">
                 <div className="category_img-warpper">
-                  <img
-                    src="img/topselling.jpeg"
-                    alt="ccateimges"
-                  />
-                 
+                  <img src="img/topselling.jpeg" alt="ccateimges" />
                 </div>
-                 <p>Top Selling</p>
+                <p>Top Selling</p>
               </div>
             </div>
           </div>
@@ -547,62 +524,65 @@ export default function HomePage() {
         </div>
       </section> */}
 
-      <section id="how-it-works" className="py-5 bg-light">
-  <div className="container">
-    <div className="text-center mb-5">
-      <span className="badge bg-primary-soft text-primary mb-2 px-3 py-2">The Better Way</span>
-      <h2 className="fw-bold">Why Smart Sellers Choose Us</h2>
-      <p className="text-muted mx-auto" style={{ maxWidth: '600px' }}>
-        Traditional importing is broken. We fixed it by removing the middleman headaches.
-      </p>
-    </div>
-
-    <div className="row g-4 align-items-stretch position-relative">
-      {/* VS Badge for Desktop */}
-      <div className="vs-badge d-none d-lg-flex">VS</div>
-
-      {/* Problem Column */}
-      <div className="col-lg-6">
-        <div className="how-card problem-card h-100">
-          <div className="card-header-custom">
-            <div className="icon-box bg-danger-light">
-              <i className="bi bi-exclamation-triangle-fill text-danger"></i>
-            </div>
-            <h4>The Old Way</h4>
+      <section id="how-it-works" className="py-5 how-it-works-modern">
+        <div className="container">
+          <div className="text-center mb-5 how-heading-wrap">
+            <span className="badge bg-primary-soft text-primary mb-2 px-3 py-2">
+              The Better Way
+            </span>
+            <h2 className="fw-bold">Why Smart Sellers Choose Us</h2>
+            <p className="text-muted mx-auto how-heading-subtitle" style={{ maxWidth: "600px" }}>
+              Traditional importing is broken. We fixed it by removing the
+              middleman headaches.
+            </p>
           </div>
-          <ul className="modern-list">
-            {problems.map((item, index) => (
-              <li key={index}>
-                <i className="bi bi-x-circle-fill text-danger me-3"></i>
-                <p>{item}</p>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
 
-      {/* Solution Column */}
-      <div className="col-lg-6">
-        <div className="how-card solution-card h-100 shadow-lg">
-          <div className="card-header-custom">
-            <div className="icon-box bg-success-light">
-              <i className="bi bi-lightning-charge-fill text-success"></i>
+          <div className="row g-4 align-items-stretch position-relative">
+            {/* VS Badge for Desktop */}
+            <div className="vs-badge d-none d-lg-flex">VS</div>
+
+            {/* Problem Column */}
+            <div className="col-lg-6">
+              <div className="how-card problem-card h-100">
+                <div className="card-header-custom">
+                  <div className="icon-box bg-danger-light">
+                    <i className="fa-solid fa-triangle-exclamation text-danger"></i>
+                  </div>
+                  <h4>The Old Way</h4>
+                </div>
+                <ul className="modern-list">
+                  {problems.map((item, index) => (
+                    <li key={index}>
+                      <span className="list-marker list-marker--problem">✕</span>
+                      <p>{item}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
-            <h4>The [YourBrand] Way</h4>
+
+            {/* Solution Column */}
+            <div className="col-lg-6">
+              <div className="how-card solution-card h-100 shadow-lg">
+                <div className="card-header-custom">
+                  <div className="icon-box bg-success-light">
+                    <i className="fa-solid fa-bolt text-success"></i>
+                  </div>
+                  <h4>The DeoDap Way</h4>
+                </div>
+                <ul className="modern-list">
+                  {solutions.map((item, index) => (
+                    <li key={index}>
+                      <span className="list-marker list-marker--solution">✓</span>
+                      <p className="fw-medium">{item}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
-          <ul className="modern-list">
-            {solutions.map((item, index) => (
-              <li key={index}>
-                <i className="bi bi-check-circle-fill text-success me-3"></i>
-                <p className="fw-medium">{item}</p>
-              </li>
-            ))}
-          </ul>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
       <section
         id="business-analysis"
