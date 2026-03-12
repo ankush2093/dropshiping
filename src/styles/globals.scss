@@ -431,8 +431,10 @@ a {
 }
 
 .ctategory_card_hm {
-  border-radius: 15px;
   overflow: hidden;
+  // background-color: #010a1a;
+  border-radius: 20px;
+  background: linear-gradient(270deg, #e60f14, #044778);
 }
 
 .category_img-warpper {
@@ -446,25 +448,16 @@ a {
   height: 100%;
   object-fit: cover;
   display: block;
+  border-radius: 20px;
 }
 
 /* text overlay */
-.category_img-warpper p {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  padding: 10px;
-  color: rgb(238, 132, 10);
+.ctategory_card_hm p {
+  color: #fff;
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.86),
-    rgba(0, 0, 0, 0.132)
-  );
+  margin-top: 10px;
 }
 
 // Top Treanding Section
@@ -544,96 +537,94 @@ a {
 }
 
 // How It Works Section
-.how-it-works {
-  background: linear-gradient(180deg, #fff 0%, #f8f8f8 100%);
+.bg-primary-soft { background: #e0e7ff; color: #4338ca; border-radius: 50px; font-weight: 600; }
+
+.how-card {
+  background: #fff;
+  border-radius: 24px;
+  padding: 40px;
+  transition: transform 0.3s ease;
+  border: 1px solid #eee;
 }
 
-.how-it-works__panel {
-  border-radius: 14px;
-  padding: 22px 18px;
-  box-shadow: 0 8px 20px rgba(12, 20, 33, 0.08);
-  border: 1px solid transparent;
+.problem-card {
+  background-color: #fafafa;
+  border-right: 2px dashed #ddd;
 }
 
-.how-it-works__panel h4 {
-  margin-bottom: 16px;
-  font-size: 22px;
-  font-weight: 700;
+.solution-card {
+  border: 2px solid #16a34a;
+  position: relative;
+  z-index: 2;
 }
 
-.how-it-works__panel--problem {
-  background: #fff6f6;
-  border-color: #ffd7d7;
+.card-header-custom {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
-.how-it-works__panel--problem h4 {
-  color: #b42318;
-}
-
-.how-it-works__panel--solution {
-  background: #f4fff7;
-  border-color: #ccefd8;
-}
-
-.how-it-works__panel--solution h4 {
-  color: #067647;
-}
-
-.how-it-works__list {
+.card-header-custom h4 {
   margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  font-weight: 800;
+  font-size: 1.5rem;
 }
 
-.how-it-works__list li {
+.icon-box {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
   display: flex;
-  gap: 10px;
-  align-items: flex-start;
-}
-
-.how-it-works__list span {
-  min-width: 28px;
-  height: 28px;
-  border-radius: 50%;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
-  font-weight: 700;
-  color: #fff;
-  margin-top: 1px;
+  font-size: 1.4rem;
 }
 
-.how-it-works__panel--problem .how-it-works__list span {
-  background: #e11d48;
-}
+.bg-danger-light { background: #fee2e2; color: #dc2626; border-radius: 50px; font-weight: 600; }
+.bg-success-light { background: #d1fae5; color: #047857; border-radius: 50px; font-weight: 600; }
 
-.how-it-works__panel--solution .how-it-works__list span {
-  background: #16a34a;
-}
-
-.how-it-works__list p {
+.modern-list {
+  list-style: none;
+  padding: 0;
   margin: 0;
-  color: #101828;
-  font-size: 15px;
-  line-height: 1.5;
+}
+
+.modern-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.modern-list p {
+  margin: 0;
+  color: #4b5563;
+}
+
+/* VS Badge Styling */
+.vs-badge {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: #111827;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  z-index: 10;
+  border: 5px solid #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 @media (max-width: 991px) {
-  .how-it-works__panel {
-    padding: 18px 14px;
-  }
-
-  .how-it-works__panel h4 {
-    font-size: 20px;
-  }
-
-  .how-it-works__list p {
-    font-size: 14px;
-  }
+  .how-card { padding: 25px; }
+  .problem-card { border-right: none; border-bottom: 2px dashed #ddd; }
 }
 
 // Business Analysis Section

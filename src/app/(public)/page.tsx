@@ -239,112 +239,30 @@ export default function HomePage() {
               <i className="fas fa-chevron-right"></i>
             </div>
           </Swiper>
-            <div className="container">
-          <div className="hero-hm__cards">
-            {heroCategories.map((category) => (
-              <article key={category.title} className="hero-hm__card">
-                <h3>{category.title}</h3>
-                <div className="hero-hm__card-grid">
-                  {category.items.map((item) => (
-                    <div key={item.label} className="hero-hm__card-item">
-                      <img src={item.image} alt={item.label} />
-                      <span>{item.label}</span>
-                    </div>
-                  ))}
-                </div>
-                <a href="#top-selling">{category.cta}</a>
-              </article>
-            ))}
-          </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="top-selling" className="hm_category_section section-padding">
-        <div className="container">
-          <h3 className="text-center mb-4">Top Selling</h3>
-          <div className="row g-3">
-            <div className="col-6 col-6 col-md-2">
-              <div className="ctategory_card_hm">
-                <div className="category_img-warpper">
-                  <img
-                    src="https://5.imimg.com/data5/TG/DN/MY-37294786/designer-artificial-jewellery-500x500.jpg"
-                    alt="ccateimges"
-                  />
-                  <p>Top Selling</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-6 col-md-2">
-              <div className="ctategory_card_hm">
-                <div className="category_img-warpper">
-                  <img
-                    src="https://5.imimg.com/data5/TG/DN/MY-37294786/designer-artificial-jewellery-500x500.jpg"
-                    alt="ccateimges"
-                  />
-                  <p>Top Selling</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-6 col-md-2">
-              <div className="ctategory_card_hm">
-                <div className="category_img-warpper">
-                  <img
-                    src="https://5.imimg.com/data5/TG/DN/MY-37294786/designer-artificial-jewellery-500x500.jpg"
-                    alt="ccateimges"
-                  />
-                  <p>Top Selling</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-6 col-md-2">
-              <div className="ctategory_card_hm">
-                <div className="category_img-warpper">
-                  <img
-                    src="https://5.imimg.com/data5/TG/DN/MY-37294786/designer-artificial-jewellery-500x500.jpg"
-                    alt="ccateimges"
-                  />
-                  <p>Top Selling</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-6 col-md-2">
-              <div className="ctategory_card_hm">
-                <div className="category_img-warpper">
-                  <img
-                    src="https://5.imimg.com/data5/TG/DN/MY-37294786/designer-artificial-jewellery-500x500.jpg"
-                    alt="ccateimges"
-                  />
-                  <p>Top Selling</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-6 col-md-2">
-              <div className="ctategory_card_hm">
-                <div className="category_img-warpper">
-                  <img
-                    src="https://5.imimg.com/data5/TG/DN/MY-37294786/designer-artificial-jewellery-500x500.jpg"
-                    alt="ccateimges"
-                  />
-                  <p>Top Selling</p>
-                </div>
-              </div>
+          <div className="container">
+            <div className="hero-hm__cards">
+              {heroCategories.map((category) => (
+                <article key={category.title} className="hero-hm__card">
+                  <h3>{category.title}</h3>
+                  <div className="hero-hm__card-grid">
+                    {category.items.map((item) => (
+                      <div key={item.label} className="hero-hm__card-item">
+                        <img src={item.image} alt={item.label} />
+                        <span>{item.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <a href="#top-selling">{category.cta}</a>
+                </article>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="top-treanding"
-        className="section-padding hm_top_treanding_section"
-      >
+      <section id="top-treanding" className="section-padding hm_top_treanding_section">
         <div className="container">
-          <h3 className="text-center mb-4">Top Treanding</h3>
+          <h3 className="text-center mb-4">Top Trending</h3>
 
           <div className="row g-3">
             <div className="col-6 col-6 col-md-2">
@@ -355,7 +273,7 @@ export default function HomePage() {
                     alt="ccateimges"
                   />
                 </div>
-                <p>Top Treanding</p>
+                <p>Top Trending</p>
               </div>
             </div>
 
@@ -367,7 +285,7 @@ export default function HomePage() {
                     alt="ccateimges"
                   />
                 </div>
-                <p>Top Treanding</p>
+                <p>Top Trending</p>
               </div>
             </div>
 
@@ -379,7 +297,7 @@ export default function HomePage() {
                     alt="ccateimges"
                   />
                 </div>
-                <p>Top Treanding</p>
+                <p>Top Trending</p>
               </div>
             </div>
 
@@ -391,7 +309,7 @@ export default function HomePage() {
                     alt="ccateimges"
                   />
                 </div>
-                <p>Top Treanding</p>
+                <p>Top Trending</p>
               </div>
             </div>
 
@@ -403,7 +321,7 @@ export default function HomePage() {
                     alt="ccateimges"
                   />
                 </div>
-                <p>Top Treanding</p>
+                <p>Top Trending</p>
               </div>
             </div>
             <div className="col-6 col-6 col-md-2">
@@ -414,16 +332,21 @@ export default function HomePage() {
                     alt="ccateimges"
                   />
                 </div>
-                <p>Top Treanding</p>
+                <p>Top Trending</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="top-treanding" className="section-padding hm_top_cat_section">
+
+
+      <section
+        id="top-treanding"
+        className="section-padding hm_top_cat_section"
+      >
         <div className="container">
-          <h3 className="text-center mb-4">Top Treanding</h3>
+          <h3 className="text-center mb-4">Express Delivery</h3>
 
           <div className="row g-3">
             <div className="col-6 col-6 col-md-2">
@@ -496,13 +419,97 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-padding electronics-coming-soon">
+        <section id="top-selling" className="hm_category_section section-padding">
         <div className="container">
-       
+          <h3 className="text-center mb-4">Top Deals</h3>
+          <img className="img-fluid mb-4" src="img/offerbanner.png" alt="" />
+          <div className="row g-3">
+            <div className="col-6 col-6 col-md-2">
+              <div className="ctategory_card_hm">
+                <div className="category_img-warpper">
+                  <img
+                    src="img/topselling.jpeg"
+                    alt="ccateimges"
+                  />
+                 
+                </div>
+                 <p>Top Selling</p>
+              </div>
+            </div>
+
+            <div className="col-6 col-md-2">
+              <div className="ctategory_card_hm">
+                <div className="category_img-warpper">
+                  <img
+                    src="img/topselling.jpeg"
+                    alt="ccateimges"
+                  />
+                 
+                </div>
+                 <p>Top Selling</p>
+              </div>
+            </div>
+
+            <div className="col-6 col-md-2">
+              <div className="ctategory_card_hm">
+                <div className="category_img-warpper">
+                  <img
+                    src="img/topselling.jpeg"
+                    alt="ccateimges"
+                  />
+                 
+                </div>
+                 <p>Top Selling</p>
+              </div>
+            </div>
+
+            <div className="col-6 col-md-2">
+              <div className="ctategory_card_hm">
+                <div className="category_img-warpper">
+                  <img
+                    src="img/topselling.jpeg"
+                    alt="ccateimges"
+                  />
+                 
+                </div>
+                 <p>Top Selling</p>
+              </div>
+            </div>
+
+            <div className="col-6 col-md-2">
+              <div className="ctategory_card_hm">
+                <div className="category_img-warpper">
+                  <img
+                    src="img/topselling.jpeg"
+                    alt="ccateimges"
+                  />
+                 
+                </div>
+                 <p>Top Selling</p>
+              </div>
+            </div>
+
+            <div className="col-6 col-md-2">
+              <div className="ctategory_card_hm">
+                <div className="category_img-warpper">
+                  <img
+                    src="img/topselling.jpeg"
+                    alt="ccateimges"
+                  />
+                 
+                </div>
+                 <p>Top Selling</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="how-itworks" className="section-padding how-it-works">
+      <section className="section-padding electronics-coming-soon">
+        <div className="container"></div>
+      </section>
+
+      {/* <section id="how-itworks" className="section-padding how-it-works">
         <div className="container">
           <h3 className="text-center mb-2">How It Works</h3>
           <p className="text-center text-muted mb-4">
@@ -538,7 +545,64 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <section id="how-it-works" className="py-5 bg-light">
+  <div className="container">
+    <div className="text-center mb-5">
+      <span className="badge bg-primary-soft text-primary mb-2 px-3 py-2">The Better Way</span>
+      <h2 className="fw-bold">Why Smart Sellers Choose Us</h2>
+      <p className="text-muted mx-auto" style={{ maxWidth: '600px' }}>
+        Traditional importing is broken. We fixed it by removing the middleman headaches.
+      </p>
+    </div>
+
+    <div className="row g-4 align-items-stretch position-relative">
+      {/* VS Badge for Desktop */}
+      <div className="vs-badge d-none d-lg-flex">VS</div>
+
+      {/* Problem Column */}
+      <div className="col-lg-6">
+        <div className="how-card problem-card h-100">
+          <div className="card-header-custom">
+            <div className="icon-box bg-danger-light">
+              <i className="bi bi-exclamation-triangle-fill text-danger"></i>
+            </div>
+            <h4>The Old Way</h4>
+          </div>
+          <ul className="modern-list">
+            {problems.map((item, index) => (
+              <li key={index}>
+                <i className="bi bi-x-circle-fill text-danger me-3"></i>
+                <p>{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      {/* Solution Column */}
+      <div className="col-lg-6">
+        <div className="how-card solution-card h-100 shadow-lg">
+          <div className="card-header-custom">
+            <div className="icon-box bg-success-light">
+              <i className="bi bi-lightning-charge-fill text-success"></i>
+            </div>
+            <h4>The [YourBrand] Way</h4>
+          </div>
+          <ul className="modern-list">
+            {solutions.map((item, index) => (
+              <li key={index}>
+                <i className="bi bi-check-circle-fill text-success me-3"></i>
+                <p className="fw-medium">{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section
         id="business-analysis"
