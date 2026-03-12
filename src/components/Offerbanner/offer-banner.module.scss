@@ -1,0 +1,90 @@
+.offerBanner {
+  padding: 16px 0;
+}
+
+.inner {
+  position: relative;
+}
+
+.swiper {
+  padding: 0 10px;
+}
+
+.slide {
+  height: auto;
+}
+
+.card {
+  display: block;
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+}
+
+// .card img {
+//   width: 100%;
+//   height: clamp(180px, 26vw, 280px);
+//   object-fit: cover;
+//   display: block;
+// }
+
+.card img {
+  width: 100%;
+  height: clamp(220px, 30vw, 350px);
+  object-fit: cover;
+  display: block;
+}
+
+.navBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  background: #fff;
+  color: #ef4444;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.2);
+  z-index: 8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.navBtn:hover {
+  transform: translateY(-50%) scale(1.04);
+}
+
+.prevBtn {
+  left: 14px;
+}
+
+.nextBtn {
+  right: 14px;
+}
+
+@media (max-width: 767px) {
+  .offerBanner {
+    padding: 10px 0;
+  }
+
+  .swiper {
+    padding: 0 6px;
+  }
+
+  .card {
+    border-radius: 14px;
+  }
+
+  .card img {
+    height: 190px;
+  }
+
+  .navBtn {
+    display: none;
+  }
+}

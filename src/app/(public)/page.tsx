@@ -5,6 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import Offerbanner from "@/components/Offerbanner/Offerbanner";
 
 export default function HomePage() {
   const heroSlides = [
@@ -24,7 +25,7 @@ export default function HomePage() {
       title: "Kitchen tools & storage",
       subtitle: "Home utility collection",
       note: "Best sellers picked for daily use",
-     
+
       backgroundImage:
         "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2400&auto=format&fit=crop",
       productImage:
@@ -81,7 +82,7 @@ export default function HomePage() {
         {
           label: "Kitchen appliances",
           image:
-            "https://images.unsplash.com/photo-1585515656816-1e95b55d8d56?q=80&w=900&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1570222094114-d054a817e56b?q=80&w=2105&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         },
         {
           label: "Office furniture",
@@ -195,9 +196,10 @@ export default function HomePage() {
               delay: 5000,
               disableOnInteraction: false,
             }}
-            pagination={{
-              clickable: true,
-            }}
+            // pagination={{
+            //   clickable: false,
+            // }}
+            pagination={false}
             navigation={{
               nextEl: ".hero-hm__nav-btn--next",
               prevEl: ".hero-hm__nav-btn--prev",
@@ -421,7 +423,11 @@ export default function HomePage() {
       <section id="top-selling" className="hm_category_section section-padding">
         <div className="container">
           <h3 className="text-center mb-4">Top Deals</h3>
-          <img className="img-fluid mb-4" src="img/offerbanner.png" alt="" />
+          <img
+            className="img-fluid mb-4"
+            src="img/offerbanner.png"
+            alt="ttileimg"
+          />
           <div className="row g-3">
             <div className="col-6 col-6 col-md-2">
               <div className="ctategory_card_hm">
@@ -481,7 +487,81 @@ export default function HomePage() {
       </section>
 
       <section className="section-padding electronics-coming-soon">
-        <div className="container"></div>
+        <div className="container">
+          <img
+            className="img-fluid mb-4"
+            src="img/offerbanner.png"
+            alt="ttileimg"
+          />
+          <div className="row g-3">
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section id="how-it-works" className="section-padding bg-light">
@@ -513,7 +593,9 @@ export default function HomePage() {
                 <ul className="modern-list">
                   {problems.map((item, index) => (
                     <li key={index}>
-                      <span className="list-marker list-marker--problem">✕</span>
+                      <span className="list-marker list-marker--problem">
+                        ✕
+                      </span>
                       <p>{item}</p>
                     </li>
                   ))}
@@ -533,7 +615,9 @@ export default function HomePage() {
                 <ul className="modern-list">
                   {solutions.map((item, index) => (
                     <li key={index}>
-                      <span className="list-marker list-marker--solution">✓</span>
+                      <span className="list-marker list-marker--solution">
+                        ✓
+                      </span>
                       <p className="fw-medium">{item}</p>
                     </li>
                   ))}
@@ -542,6 +626,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </section>
+
+      <section>
+        <Offerbanner />
       </section>
 
       <section
