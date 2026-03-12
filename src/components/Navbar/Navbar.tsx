@@ -7,7 +7,7 @@ import { useAuth } from "@/hooks/useAuth";
 
 const topLinks = [
   { label: "+91 90606 XXXXX", href: "tel:+919638666607", icon: "fas fa-phone-alt" },
-  { label: "care@tradebridge.com", href: "mailto:care@deodap.com", icon: "fas fa-envelope" },
+  { label: "care@tradebridge.com", href: "mailto:care@tradebridge.com", icon: "fas fa-envelope" },
   { label: "9:00 AM to 7:00 PM", href: "#", icon: "far fa-clock", isStatic: true },
 ];
 
@@ -135,7 +135,7 @@ const Navbar: React.FC = () => {
               <i className="fas fa-bars"></i>
             </button>
             <Link href="/" className="dd-nav__brand">
-              <img src="/img/logo-deodap.png" alt="DeoDap" width={170} height={50} style={{ objectFit: 'contain' }} />
+              <img src="/img/logo-deodap.png" alt="TradeBridge" width={170} height={50} style={{ objectFit: 'contain' }} />
             </Link>
           </div>
 

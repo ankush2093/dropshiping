@@ -9,13 +9,13 @@ const Footer: React.FC = () => {
           {/* Brand & App Links */}
           <div className="col-lg-3 col-md-6 mb-4 mb-lg-0 footer__brand-col">
             <Link href="/" className="footer__logo">
-              <img src="/img/logo-deodap.png" alt="DeoDap Wholesale" />
+              <img src="/img/logo-deodap.png" alt="tradebridge Wholesale" />
             </Link>
             <p className="footer__slogan">
               India's Largest Online B2B Marketplace for Wholesale & Drop Shipping.
             </p>
 
-            <div className="footer__app-links">
+            <div className="footer__app-links d-none">
               <a href="#" className="footer__app-btn">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" />
               </a>
@@ -81,12 +81,12 @@ const Footer: React.FC = () => {
 
           {/* Drop Shipping Section */}
           <div className="col-lg-3 col-md-6 footer__brand-col">
-            <h6>DROP SHIPPING WITH DEODAP</h6>
+            <h6>DROP SHIPPING WITH TRADEBRIDGE</h6>
             <div className="footer__info-box">
-              <p className="footer__company-name">DEODAP INTERNATIONAL</p>
+              <p className="footer__company-name">Trade Bridge</p>
               <p><span>Regd. Office:</span> Surat, Gujarat, India</p>
               <p><span>Contact:</span> +91 9638666607</p>
-              <p><span>Email:</span> care@deodap.com</p>
+              <p><span>Email:</span> care@tradebridge.com</p>
               <p><span>Time:</span> 9:00 AM to 7:00 PM</p>
             </div>
           </div>
@@ -95,10 +95,10 @@ const Footer: React.FC = () => {
         <div className="footer__bottom">
           <div className="row">
             <div className="col-md-6 text-center text-md-start">
-              <p className="mb-0">© {new Date().getFullYear()} Drop Shipping With DeoDap. All Rights Reserved.</p>
+              <p className="mb-0">© {new Date().getFullYear()} Drop Shipping With TradeBridge. All Rights Reserved.</p>
             </div>
             <div className="col-md-6 text-center text-md-end mt-2 mt-md-0">
-              <p className="mb-0">Designed & Developed by DeoDap Team</p>
+              <p className="mb-0">Designed & Developed by TradeBridge Team</p>
             </div>
           </div>
         </div>

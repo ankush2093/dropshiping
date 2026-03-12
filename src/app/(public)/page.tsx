@@ -697,13 +697,13 @@ export default function HomePage() {
 
             <div className="row g-3 mt-1">
               <div className="col-md-6">
-                <a className="contact-us__card" href="mailto:care@deodap.com">
+                <a className="contact-us__card" href="mailto:care@tradebridge.com">
                   <span className="contact-us__icon">
                     <i className="fas fa-envelope"></i>
                   </span>
                   <div>
                     <small>Email Us</small>
-                    <p>care@deodap.com</p>
+                    <p>care@tradebridge.com</p>
                   </div>
                 </a>
               </div>
@@ -730,7 +730,7 @@ export default function HomePage() {
                 <i className="fab fa-whatsapp"></i> Chat on WhatsApp
               </a>
               <a
-                href="mailto:care@deodap.com"
+                href="mailto:care@tradebridge.com"
                 className="contact-us__btn contact-us__btn--mail"
               >
                 <i className="fas fa-paper-plane"></i> Send Email
