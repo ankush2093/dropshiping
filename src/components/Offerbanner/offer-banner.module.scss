@@ -22,19 +22,19 @@
   background: #fff;
 }
 
-// .card img {
-//   width: 100%;
-//   height: clamp(180px, 26vw, 280px);
-//   object-fit: cover;
-//   display: block;
-// }
-
 .card img {
   width: 100%;
-  height: clamp(220px, 30vw, 350px);
+  height: clamp(180px, 26vw, 280px);
   object-fit: cover;
   display: block;
 }
+
+// .card img {
+//   width: 100%;
+//   height: clamp(220px, 30vw, 350px);
+//   object-fit: cover;
+//   display: block;
+// }
 
 .navBtn {
   position: absolute;

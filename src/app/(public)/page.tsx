@@ -45,8 +45,8 @@ export default function HomePage() {
 
   const heroCategories = [
     {
-      title: "Appliances for your home | Up to 55% off",
-      cta: "See more",
+      title: "Bulk order discounts | Up to 55% off",
+      cta: "Explore All",
       items: [
         {
           label: "Air conditioners",
@@ -72,7 +72,7 @@ export default function HomePage() {
     },
     {
       title: "Bulk order discounts + up to 18% GST savings",
-      cta: "Create a free account",
+      cta: "Explore All",
       items: [
         {
           label: "Laptops",
@@ -97,8 +97,8 @@ export default function HomePage() {
       ],
     },
     {
-      title: "Starting Rs49 | Deals on home essentials",
-      cta: "Explore all",
+      title: "Bulk order discounts| Deals on home essentials",
+      cta: "Explore All",
       items: [
         {
           label: "Cleaning supplies",
@@ -123,8 +123,8 @@ export default function HomePage() {
       ],
     },
     {
-      title: "Automotive essentials | Up to 60% off",
-      cta: "See more",
+      title: "Bulk order discounts| Up to 60% off",
+      cta: "Explore All",
       items: [
         {
           label: "Cleaning accessories",
@@ -488,12 +488,80 @@ export default function HomePage() {
 
       <section className="section-padding electronics-coming-soon">
         <div className="container">
+          <h3 className="text-center mb-4">Top Category</h3>
+
           <img
             className="img-fluid mb-4"
             src="img/offerbanner.png"
             alt="ttileimg"
           />
           <div className="row g-3">
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Head Phones</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Ear Phones</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Toys</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-6 col-6 col-md-2">
+              <div className="hm_electronic_card">
+                <div className="hm_electronic_card_img">
+                  <img src="img/elecproduct.jpg" alt="Product" />
+                </div>
+                <div className="hm_electronic_card_content">
+                  <h3>MIN. 50% OFF</h3>
+                  <p>Classic Collection</p>
+                </div>
+              </div>
+            </div>
             <div className="col-6 col-6 col-md-2">
               <div className="hm_electronic_card">
                 <div className="hm_electronic_card_img">
@@ -588,7 +656,7 @@ export default function HomePage() {
                   <div className="icon-box bg-danger-light">
                     <i className="fa-solid fa-triangle-exclamation text-danger"></i>
                   </div>
-                  <h4>The Old Way</h4>
+                  <h4>The Old Way (Problems)</h4>
                 </div>
                 <ul className="modern-list">
                   {problems.map((item, index) => (
@@ -610,7 +678,7 @@ export default function HomePage() {
                   <div className="icon-box bg-success-light">
                     <i className="fa-solid fa-circle-check text-success"></i>
                   </div>
-                  <h4>The Trade Bridge Way</h4>
+                  <h4>The Trade Bridge Way (Solutions)</h4>
                 </div>
                 <ul className="modern-list">
                   {solutions.map((item, index) => (
@@ -677,7 +745,7 @@ export default function HomePage() {
                 Profit Margin <strong>→ %</strong>
               </p>
               <button type="button" className="business-analysis__order-btn">
-                Order
+                Calculate Your Margin
               </button>
             </div>
           </div>
@@ -697,7 +765,10 @@ export default function HomePage() {
 
             <div className="row g-3 mt-1">
               <div className="col-md-6">
-                <a className="contact-us__card" href="mailto:care@tradebridge.com">
+                <a
+                  className="contact-us__card"
+                  href="mailto:care@tradebridge.com"
+                >
                   <span className="contact-us__icon">
                     <i className="fas fa-envelope"></i>
                   </span>

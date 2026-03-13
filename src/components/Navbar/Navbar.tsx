@@ -110,13 +110,15 @@ const Navbar: React.FC = () => {
               </React.Fragment>
             ))}
           </div>
-          <div className="dd-nav__top-apps d-none">
-            <a href="#">
+          <div className="dd-nav__top-apps  dd-nav__top-item">
+            {/* <a href="#">
               <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play" height="32" />
             </a>
             <a href="#">
               <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store" height="32" />
-            </a>
+            </a> */}
+            <i className="fas fa-store"></i>
+            <span>Become A Seller</span>
           </div>
         </div>
       </div>

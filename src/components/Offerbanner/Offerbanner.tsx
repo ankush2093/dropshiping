@@ -10,28 +10,28 @@ const banners = [
   {
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1400&q=80",
+      "https://rukminim2.flixcart.com/fk-p-flap/3160/1540/image/6167b4c6d7519d38.png?q=60",
     href: "javascript:void(0)",
     alt: "Offer banner one",
   },
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1400&q=80",
+      "https://rukminim2.flixcart.com/fk-p-flap/3160/1540/image/0723b97813507bd2.jpg?q=60",
     href: "javascript:void(0)",
     alt: "Offer banner two",
   },
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1558060370-d644479cb6f7?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://rukminim2.flixcart.com/fk-p-flap/3160/1540/image/a8cc7b9c97fdd0c3.png?q=60",
     href: "javascript:void(0)",
     alt: "Offer banner three",
   },
   {
     id: 4,
     image:
-      "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1400&q=80",
+      "https://rukminim2.flixcart.com/fk-p-flap/3160/1540/image/026c60bd60eb62e1.png?q=60",
     href: "javascript:void(0)",
     alt: "Offer banner four",
   },
