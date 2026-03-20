@@ -713,7 +713,104 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="business-analysis__metrics">
+          <div className="softcard_warpper">
+            <div className="sof_card">
+              <div className="sof_card_icon_wrapper">
+                <div className="sof_card_icon_circle">
+                  <img
+                    className="sof_card_icon"
+                    src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png"
+                    alt="Infographic icon"
+                  />
+                </div>
+              </div>
+
+              <div className="sof_card_title">
+                Vendor Availability on Amazon
+              </div>
+
+              <div className="sof_card_text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                nonummy nibh euismod tincidunt laoreet dolore.
+              </div>
+            </div>
+            <div className="sof_card">
+              <div className="sof_card_icon_wrapper">
+                <div className="sof_card_icon_circle">
+                  <img
+                    className="sof_card_icon"
+                    src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png"
+                    alt="Infographic icon"
+                  />
+                </div>
+              </div>
+
+              <div className="sof_card_title">
+                Vendor Availability on Flipkart
+              </div>
+
+              <div className="sof_card_text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                nonummy nibh euismod tincidunt laoreet dolore.
+              </div>
+            </div>
+            <div className="sof_card">
+              <div className="sof_card_icon_wrapper">
+                <div className="sof_card_icon_circle">
+                  <img
+                    className="sof_card_icon"
+                    src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png"
+                    alt="Infographic icon"
+                  />
+                </div>
+              </div>
+
+              <div className="sof_card_title">Average Sale / Month</div>
+
+              <div className="sof_card_text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                nonummy nibh euismod tincidunt laoreet dolore.
+              </div>
+            </div>
+            <div className="sof_card">
+              <div className="sof_card_icon_wrapper">
+                <div className="sof_card_icon_circle">
+                  <img
+                    className="sof_card_icon"
+                    src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png"
+                    alt="Infographic icon"
+                  />
+                </div>
+              </div>
+
+              <div className="sof_card_title">Competition Score</div>
+
+              <div className="sof_card_text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                nonummy nibh euismod tincidunt laoreet dolore.
+              </div>
+            </div>
+            <div className="sof_card">
+              <div className="sof_card_icon_wrapper">
+                <div className="sof_card_icon_circle">
+                  <img
+                    className="sof_card_icon"
+                    src="https://cdn-icons-png.flaticon.com/512/1055/1055644.png"
+                    alt="Infographic icon"
+                  />
+                </div>
+              </div>
+
+              <div className="sof_card_title">Demand Score</div>
+
+              <div className="sof_card_text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                nonummy nibh euismod tincidunt laoreet dolore.
+              </div>
+            </div>
+          </div>
+
+          <div className="business-analysis__metrics d-none">
             {analysisMetrics.map((item, index) => (
               <div className="business-analysis__metric-card" key={item}>
                 <span className="business-analysis__metric-index">

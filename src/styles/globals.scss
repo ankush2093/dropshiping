@@ -28,8 +28,6 @@ a {
   position: sticky;
   top: 0;
 
-
-
   /* Top Bar */
   &__top {
     background: #fff;
@@ -495,8 +493,6 @@ a {
   background: #fff;
 }
 
-
-
 // New category section hm_top_cat_section
 
 .hm_top_cat_section {
@@ -545,16 +541,16 @@ a {
   font-family: sans-serif;
 
   /* glass effect */
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 
   /* gradient border look */
-  border: 3px solid rgba(255,255,255,0.2);
+  border: 3px solid rgba(255, 255, 255, 0.2);
 
-  box-shadow: 
-    0 10px 25px rgba(0,0,0,0.25),
-    inset 0 0 20px rgba(255,255,255,0.08);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.25),
+    inset 0 0 20px rgba(255, 255, 255, 0.08);
 }
 
 /* top gradient shine */
@@ -575,7 +571,7 @@ a {
 }
 
 .hm_electronic_card_content {
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
   color: #fff;
   text-align: center;
   padding: 14px 10px;
@@ -614,13 +610,21 @@ a {
   line-height: 1.65;
 }
 
-.bg-primary-soft { background: #dbeafe; color: #1d4ed8; border-radius: 999px; font-weight: 700; border: 1px solid #bfdbfe; }
+.bg-primary-soft {
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 999px;
+  font-weight: 700;
+  border: 1px solid #bfdbfe;
+}
 
 .how-card {
   background: #fff;
   border-radius: 24px;
   padding: 30px 15px;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
   border: 1px solid #e5e7eb;
   box-shadow: 0 18px 34px rgba(15, 23, 42, 0.08);
 }
@@ -667,8 +671,20 @@ a {
   flex-shrink: 0;
 }
 
-.bg-danger-light { background: #fee2e2; color: #dc2626; border-radius: 14px; font-weight: 600; border: 1px solid #fecaca; }
-.bg-success-light { background: #d1fae5; color: #047857; border-radius: 14px; font-weight: 600; border: 1px solid #a7f3d0; }
+.bg-danger-light {
+  background: #fee2e2;
+  color: #dc2626;
+  border-radius: 14px;
+  font-weight: 600;
+  border: 1px solid #fecaca;
+}
+.bg-success-light {
+  background: #d1fae5;
+  color: #047857;
+  border-radius: 14px;
+  font-weight: 600;
+  border: 1px solid #a7f3d0;
+}
 
 .modern-list {
   list-style: none;
@@ -741,9 +757,17 @@ a {
 }
 
 @media (max-width: 991px) {
-  .how-card { padding: 25px; border-radius: 20px; }
-  .problem-card { border-right: none; border-bottom: 2px dashed #fecaca; }
-  .how-heading-subtitle { font-size: 1rem; }
+  .how-card {
+    padding: 25px;
+    border-radius: 20px;
+  }
+  .problem-card {
+    border-right: none;
+    border-bottom: 2px dashed #fecaca;
+  }
+  .how-heading-subtitle {
+    font-size: 1rem;
+  }
 }
 
 // Business Analysis Section
@@ -761,6 +785,109 @@ a {
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 14px;
   margin-bottom: 24px;
+}
+
+.softcard_warpper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.sof_card {
+  width: 243px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 30px rgb(28 27 27 / 65%);
+  overflow: visible;
+}
+
+/* TOP LEFT CORNER BRACKET */
+
+.sof_card::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: -9px;
+  width: 90px;
+  height: 90px;
+  border-top: 12px solid #d4a017;
+  border-left: 12px solid #d4a017;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 22px 20px 0px 20px;
+  z-index: -1;
+}
+
+/* BOTTOM RIGHT CORNER BRACKET */
+
+.sof_card::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  right: -9px;
+  width: 90px;
+  height: 90px;
+  border-bottom: 12px solid #d4a017;
+  border-right: 12px solid #d4a017;
+  border-top: none;
+  border-left: none;
+  border-radius: 0px 20px 22px 20px;
+  z-index: -1;
+}
+
+/* ICON WRAPPER */
+
+.sof_card_icon_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 22px;
+}
+
+/* ICON CIRCLE */
+
+.sof_card_icon_circle {
+  width: 80px;
+  height: 80px;
+  border: 5px solid #d4a017;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+/* ICON */
+
+.sof_card_icon {
+  width: 36px;
+  height: 36px;
+  opacity: 0.55;
+  filter: grayscale(100%);
+}
+
+/* TITLE */
+
+.sof_card_title {
+  color: #d4a017;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+/* TEXT */
+
+.sof_card_text {
+  font-size: 13.5px;
+  color: #888;
+  line-height: 1.7;
+  padding: 0 5px;
 }
 
 .business-analysis__metric-card {
